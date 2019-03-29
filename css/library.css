@@ -1,0 +1,150 @@
+
+
+/* --------------------------
+    MOBILE SIZE FIRST
+--------------------------- */
+
+.library-hero {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 30px 30px 30px;
+  background-image: url(http://baezcreative.co/wp-content/uploads/2018/09/palms.png);
+  background-size:  cover;
+  background-repeat: no-repeat;
+
+  -webkit-box-shadow: inset 0px 7px 36px -6px rgba(2,0,46,0.79);
+  -moz-box-shadow: inset 0px 7px 36px -6px rgba(2,0,46,0.79);
+  box-shadow: inset 0px 7px 36px -6px rgba(2,0,46,0.79);
+}
+
+.library-hero h2 {
+  color: #fdbe8a;
+  background-color: rgb(20, 50, 65, .75);
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 0 0 .5em;
+  line-height: 120%;
+  letter-spacing: 2px;
+}
+
+.library-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.library-nav {
+  width: 90%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.library-nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.6;
+  list-style-type: none;
+}
+
+.library-main-content {
+	width: 90%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.library-main-content a {
+  color: #ffa676;
+}
+
+.library-main-content a:hover {
+  color: #144635;
+}
+
+/*COLORS PAGE*/
+
+  #color-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+
+	.color-molecule {
+		width: 100%;
+		min-height: 275px;
+		margin: 10px;
+		background-color: #eae7dc;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.color-molecule-sample {
+		min-height: 200px;
+		width: 99%;
+		margin-top: 1px;
+		background-color: #00892a;
+	}
+
+	.color-molecule h2 {
+		margin-top: 10px;
+    margin-bottom: 5px;
+	}
+
+
+/*END MOBILE FIRST STYLING*/
+
+/* --------------------------
+    TABLET MEDIA QUERY
+--------------------------- */
+
+@media (min-width: 530px) {
+
+  .library-nav {
+    width: 80%;
+  }
+
+  .library-main-content {
+    width: 80%;
+  }
+
+  .color-molecule {
+    width: 220px;
+  }
+
+} /*END TABLET MEDIA QUERY*/
+
+
+/* --------------------------
+    DESKTOP MEDIA QUERY
+--------------------------- */
+@media (min-width: 1025px) {
+
+  .library-container {
+    flex-direction: row;
+  }
+
+  .library-nav {
+    width: 25%;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 170px;
+  }
+
+  .library-main-content {
+    width: 65%;
+    max-width: 900px;
+    padding-right: 20px;
+  }
+
+} /*END DESKTOP MEDIA QUERY*/
+
+@media (min-width: 1400px) {
+
+  .library-main-content {
+    width: 65%;
+    max-width: 900px;
+    margin-right: 450px;
+  }
+
+}

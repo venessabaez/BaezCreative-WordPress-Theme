@@ -1,0 +1,154 @@
+
+
+/* --------------------------
+    MOBILE SIZE FIRST
+--------------------------- */
+
+
+.article-list h1 {
+  /*Used for the headline of the category page*/
+  font-size: 4em;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 0px;
+}
+
+.article-list h2{
+  /*Used for the description of the category page*/
+  font-size: .9em;
+  padding-top: 0px;
+  font-style: italic;
+}
+
+.article-preview {
+  width: 100%;
+  height: auto;
+  background-color: #fffcf1;
+  padding: 15px 25px 15px 25px;
+  margin: 10px 0 10px 0;
+  display: block;
+}
+
+.article-preview h3 {
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+  padding-top: .5em;
+  text-transform: uppercase;
+}
+
+
+.article-preview a {
+  color: #25272e;
+}
+
+.article-preview a:hover {
+  color: #709385;
+}
+
+.article-preview p {
+  font-size: 1.1em;
+  padding: 0;
+}
+
+/*single.php*/
+
+.single-post {
+}
+
+
+.single-post-hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.single-post h1 {
+  line-height: 120%;
+  letter-spacing: 2px;
+}
+/*Excerpt at top of single post page*/
+
+.single-post-excerpt {
+  font-family: 'Merriweather', 'Oswald', serif;
+  font-style: italic;
+  color: gray;
+}
+
+/*Header image included in the withheader template*/
+
+.with-header img {
+  /*Full width image*/
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 30px 0 30px 0;
+}
+}
+
+/*Popular Posts are included at the bottom of every singlepost*/
+
+.popular-posts {
+  clear:both;
+  background-color: #fcfcfc;
+  padding: 25px 20px 10px 20px;
+  margin: 10px 0 30px 0;
+  border: 1px black solid;
+  text-align: center;
+ }
+
+ .popular-posts h2 {
+   padding:0;
+   margin: 0;
+ }
+
+.popular-posts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.popular-post-item {
+  background-color: #fdfcf8;
+  width: 235px;
+  height: 290px;
+  margin-bottom: 20px; /*Adds separation between cards on mobile-size*/
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*No more <center>!*/
+
+  /*Shadow below cards*/
+  -webkit-box-shadow: 0px 9px 24px -5px rgba(219,214,201,1);
+  -moz-box-shadow: 0px 9px 24px -5px rgba(219,214,201,1);
+  box-shadow: 0px 9px 24px -5px rgba(219,214,201,1);
+}
+
+.popular-post-item p {
+  font-size: 1em;
+  text-align: center; /*Gotta center that text*/
+  padding: 10px;
+  margin: 10px 0px 0px 0px;
+}
+
+
+
+/*END MOBILE FIRST STYLING*/
+
+/* --------------------------
+    TABLET MEDIA QUERY
+--------------------------- */
+
+@media (min-width: 530px) {
+
+  .popular-posts-list {
+    flex-direction: row;
+  }
+
+} /*END TABLET MEDIA QUERY*/
+
+
+/* --------------------------
+    DESKTOP MEDIA QUERY
+--------------------------- */
+@media (min-width: 1025px) {
+
+} /*END DESKTOP MEDIA QUERY*/

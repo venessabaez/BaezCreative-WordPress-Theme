@@ -1,0 +1,139 @@
+
+
+/* --------------------------
+    MOBILE SIZE FIRST
+--------------------------- */
+
+.main-freebies {
+
+}
+
+.main-freebies h1 {
+  font-size: 4em !important;
+  font-family: 'Oswald' !important;
+  text-align: center;
+}
+
+/*Flex Wrapping*/
+.freebie-list {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  /*Force flex items to wrap into multiple rows*/
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+
+/*Freebie item styles the single freebie listings on the main freebie page*/
+.freebie-item {
+  width: 400px;
+  height: 450px;
+  margin: 10px;
+  text-align: center;
+}
+
+.freebie-item img {
+  border-radius: 100%;
+  border: 2px black solid;
+  height: auto;
+}
+
+.freebie-item h3 {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 20%;
+  font-family: 'Oswald';
+  text-decoration: overline;
+}
+
+.freebie-item a  {
+  color: #25272e;
+}
+
+.freebie-item a:hover {
+  color: firebrick;
+}
+
+/*Styles single freebie page*/
+
+.single-freebie-item {
+  max-width: 100%;
+}
+
+.single-freebie-container {
+  display: flex;
+  display: -webkit-flex;
+  /*Force flex items to wrap into multiple rows*/
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+
+.single-freebie-left {
+  width: 100%;
+  padding: 15px;
+}
+
+.single-freebie-right {
+  width: 100%;
+  padding: 15px;
+}
+
+.single-freebie-right img {
+  max-width: 100%;
+  height: auto;
+ }
+
+ .btn-freebie-download {
+   background-color: firebrick;
+   color: white;
+   font-family: 'Merriweather';
+   border: none;
+   border-radius: 15px;
+   padding: 15px;
+ }
+
+/*END MOBILE FIRST STYLING*/
+
+/* --------------------------
+    TABLET MEDIA QUERY
+--------------------------- */
+
+@media (min-width: 530px) {
+  .single-freebie-right img {
+    max-width: 800px;
+    min-width: 100%;
+   }
+} /*END TABLET MEDIA QUERY*/
+
+
+/* --------------------------
+    DESKTOP MEDIA QUERY
+--------------------------- */
+@media (min-width: 1025px) {
+
+
+  .single-freebie-container {
+    display: flex;
+    display: -webkit-flex;
+    padding-bottom: 50px;
+  }
+
+  .single-freebie-left {
+    width: 50%;
+    padding: 2px;
+  }
+
+  .single-freebie-right {
+    width: 50%;
+    padding: 15px;
+  }
+
+  .single-freebie-right img {
+    max-width: 100%;
+    height: auto;
+  }
+
+} /*END DESKTOP MEDIA QUERY*/

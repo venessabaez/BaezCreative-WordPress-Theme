@@ -1,0 +1,51 @@
+
+
+/* --------------------------
+    MOBILE SIZE FIRST
+--------------------------- */
+
+#services-content {
+  padding-bottom: 100px;
+  background-color:  ;
+}
+
+#services-container {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  /*Force flex items to wrap into multiple rows*/
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+ }
+
+ .service-item {
+   width: 200px;
+   height: 200px;
+   text-align: center;
+   margin: 150px;
+  }
+
+/*END MOBILE FIRST STYLING*/
+
+/* --------------------------
+    TABLET MEDIA QUERY
+--------------------------- */
+
+@media (min-width: 530px) {
+
+
+} /*END TABLET MEDIA QUERY*/
+
+
+/* --------------------------
+    DESKTOP MEDIA QUERY
+--------------------------- */
+@media (min-width: 1025px) {
+
+
+
+
+} /*END DESKTOP MEDIA QUERY*/

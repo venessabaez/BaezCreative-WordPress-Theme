@@ -1,0 +1,267 @@
+/* --------------------------
+    MOBILE SIZE FIRST
+--------------------------- */
+
+#frontpage-intro {
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  padding: 100px 30px 30px 30px;
+  background-image: url(http://baezcreative.co/wp-content/uploads/2018/09/palms.png);
+  background-size:  cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset 0px 7px 36px -6px rgba(2,0,46,0.79);
+  -moz-box-shadow: inset 0px 7px 36px -6px rgba(2,0,46,0.79);
+  box-shadow: inset 0px 7px 36px -6px rgba(2,0,46,0.79);
+}
+
+#frontpage-intro-left h1, #frontpage-intro-left p{
+  color: #fdbe8a;
+  background-color: rgb(20, 50, 65, .75);
+  padding: 5px;
+}
+
+#frontpage-intro-left h1 {
+  letter-spacing: 3px;
+}
+
+/*------------------------------------*/
+
+.frontpage-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0 20px 0;
+}
+
+.frontpage-container a {
+  color: #25272e;
+}
+
+.frontpage-container button {
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+.frontpage-container a:hover, a:focus {
+  color: #709385;
+}
+
+.frontpage-headline-container {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.frontpage-headline-container p {
+  display: none;
+}
+
+#frontpage-portfolio-headline {
+  font-size: 2.25em;
+}
+
+#frontpage-portfolio-headline a {
+  color: #25272e;
+}
+
+#frontpage-portfolio-headline a:hover {
+  color: #709385;
+}
+
+#frontpage-portfolio {
+   display: flex;
+   display: -webkit-flex;
+   align-items: center;
+   -webkit-align-items: center;
+   justify-content: center;
+   -webkit-justify-content: center;
+   /*Force flex items to wrap into multiple rows*/
+   flex-flow: row wrap;
+   -webkit-flex-flow: row wrap;
+   z-index: 0;
+}
+
+/*-------Hover Overlay ----- */
+#frontpage-portfolio img {
+  width: 220px;
+  height: auto;
+}
+
+.homepageportfolio-item-container {
+  width: 220px;
+  height: auto;
+  margin: 10px;
+  position: relative;
+}
+
+.homepage-portfolio-image img {
+  width: 100%;
+  height: auto;
+}
+
+.homepage-portfolio-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 220px;
+    width: 220px;
+    opacity: .25;
+    transition: .5s ease;
+    background-color: #709385;
+}
+
+.homepageportfolio-item-container:hover .homepage-portfolio-overlay{
+  opacity: .95;
+}
+
+/*------- */
+
+
+#frontpage-blog-headline {
+  font-size: 2.25em;
+}
+
+#frontpage-blog-headline a {
+  color: #25272e;
+}
+
+#frontpage-blog-headline a:hover {
+  color: #709385;
+}
+
+#frontpage-blog {
+  width: 720px;
+  align-self: flex-start;
+}
+
+#frontpage-blog h3 {
+  font-family: 'Merriweather';
+}
+
+/*Recent Posts are included on the homepage, edited within content-blog.php*/
+
+.recent-post-list {
+}
+
+.recent-post-item {
+  height: auto;
+  text-align: left;
+  margin: 5px;
+  padding: 5px;
+}
+
+.recent-post-item p {
+  font-family: 'Merriweather';
+  font-size: 1.2em;
+  display: inline;
+}
+
+.recent-post-item a {
+  color: #25272e;
+}
+
+.recent-post-item a:hover {
+  color: #709385;
+}
+
+
+
+#frontpage-signup-container {
+  width: 100%;
+  padding: 90px 30px;
+ }
+
+#frontpage-signup-container h2 {
+  font-size: 2.8em;
+  margin: 0;
+}
+
+#frontpage-signup-container a {
+  color: #25272e;
+}
+
+#frontpage-signup-container a:hover {
+  color: #709385;
+ }
+
+
+/*END MOBILE FIRST STYLING*/
+
+/* --------------------------
+    TABLET MEDIA QUERY
+--------------------------- */
+
+@media (min-width: 530px) {
+
+  .frontpage-headline-container  {
+    width: 100%;
+    text-align: left;
+   }
+
+ .frontpage-headline-container p {
+   display: none;
+   padding: none;
+ }
+
+} /*END TABLET MEDIA QUERY*/
+
+
+/* --------------------------
+   MEDIUM DESKTOP or iPAD PRO MEDIA QUERY
+--------------------------- */
+@media (min-width: 1025px) {
+
+  .frontpage-container {
+    align-items: flex-end;
+  }
+
+  .frontpage-headline-container  {
+    width: 100%;
+  }
+
+  .frontpage-headline-container p {
+    display: inline-block;
+ }
+
+} /* END MEDIUM DESKTOP */
+
+/* LARGE DESKTOP */
+@media (min-width: 1250px) {
+
+  #frontpage-intro {
+    flex-wrap: wrap;
+  }
+
+  #frontpage-intro-left {
+    width: 75%;
+  }
+
+  .frontpage-headline-container  {
+    width: 400px;
+    height: auto;
+  }
+
+  .recent-post-item {
+    height: auto;
+     margin: 5px;
+    padding: 5px;
+  }
+
+  .recent-post-item a {
+    color: #25272e;
+  }
+
+  .recent-post-item a:hover {
+    color: #709385;
+  }
+}
+
+@media (min-width: 1650px) {
+
+  .frontpage-headline-container  {
+    width: 50%;
+  }
+}
